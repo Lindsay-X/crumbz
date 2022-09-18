@@ -1,0 +1,113 @@
+
+p {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+/* Login */
+.title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 38px 0px 17px -200px;
+}
+
+/* The input textboxes for username and password*/
+input[type=text], select{
+  width:73%;
+  background-color: white;
+  color: rgb(128, 128, 128);
+  padding: 10px 10px 10px 10px;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  outline: none;
+  margin-bottom: 16px;
+}
+
+input[type=text]:focus{
+  border: 1px solid black;
+}
+
+ /* The sign in button */
+input[type=submit] {
+  background-color: rgb(129,162,213);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 21px 10px 21px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  margin:4px 0px 25px -185px;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(76, 96, 151);
+}
+
+/*container for everything*/
+.all-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+/*Tabs*/
+.tabs{
+  display: flex;
+  flex-direction: row;
+  margin-left: -170px;
+}
+
+.tab {
+  height: 0;
+  width: 100px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 40px solid rgb(197, 190, 190);
+  border-right: 20px solid transparent;
+  border-top-left-radius: 5px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.tab:not(:first-child) {
+  margin-left: -10px;
+  z-index: 0;
+}
+
+.tab .label{
+  padding: 15px;
+  text-align: center;
+  padding: 12px 0px 12px 0px;
+  color: #000000;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+}
+
+.tab.active {
+  background-color: transparent;
+  border-bottom: 40px solid rgb(217, 217, 217);
+  z-index: 10;
+}
+
+.tab:hover{
+  border-bottom: 40px solid rgb(237, 230, 230);
+}
+
+
+/* The container holding the Login feature*/
+.flex-container{
+  background-color: rgb(217, 217, 217);
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  min-height: 300px;
+  min-width: 360px;
+  text-align: center;
+}

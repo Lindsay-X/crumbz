@@ -1,0 +1,20 @@
+.shelter-supply-container{
+  background-color: rgb(217, 217, 217);
+  width: 361px;
+  height: 301px;
+  border-radius: 5px;
+}
+
+.shelter-supply-container>div{
+  display: grid;
+  grid-template-columns: 180px 120px;
+  grid-template-rows: 25px 200px;
+  gap: 1px;
+  grid-auto-columns: auto;
+}
+
+.sub-title{
+  font-weight: 400;
+  font-size: 14px;
+  line-height:14px;
+}
